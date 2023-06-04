@@ -1,0 +1,12 @@
+services:
+  database:
+    image: 'postgres:13'
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: scholarship_portal
+    ports:
+      - 5432:5432
+    volumes:
+      - /var/lib/postgresql/data
