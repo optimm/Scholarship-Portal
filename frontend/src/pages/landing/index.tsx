@@ -1,4 +1,4 @@
-import { LandingContainer } from 'components/landing/styles';
+import { LandingContainer, LoginGoogleButton } from 'components/landing/styles';
 import LandingIcon from '@logos/landing-logo.png';
 
 const LandingPage: React.FC = () => {
@@ -6,6 +6,7 @@ const LandingPage: React.FC = () => {
     <LandingContainer>
       <img className='main-image' alt='landing icon' src={LandingIcon} />
       <h1 className='main-text'>ScholarEase</h1>
+      <LoginGoogleButton />
     </LandingContainer>
   );
 };
