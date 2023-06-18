@@ -7,9 +7,17 @@ html {
   max-width: 100vw;
   width: 100vw;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+:root {
+  /* text */
+  --text-black: #000000;
+  --text-secondary: #4f4f4f;
+  --text-tertiary: #828282;
 }

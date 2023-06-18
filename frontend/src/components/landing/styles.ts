@@ -15,7 +15,6 @@ export const LandingContainer = styled(`div`)({
     height: '200px'
   },
   ['.main-text']: {
-    fontFamily: 'Montserrat',
     fontSize: '5rem',
     fontWeight: 700,
     color: '#fff'
@@ -25,13 +24,21 @@ export const LandingContainer = styled(`div`)({
 export const LoginGoogleButton = styled(`button`)({
   border: 'none',
   outline: 'none',
-  height: '50px',
-  width: '240px',
   cursor: 'pointer',
-  background: `url(${buttonImage})`,
-  backgroundSize: 'cover',
+  background: `#fff`,
+  display: 'flex',
+  padding: '10px 20px',
+  alignItems: 'center',
+  gap: '10px',
+  fontSize: '16px',
+  fontWeight: 700,
+  color: 'var(--text-tertiary)',
+  borderRadius: '5px',
   boxShadow: '0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25)',
   ['&:hover']: {
     boxShadow: '0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25)'
+  },
+  ['.button-icon']: {
+    height: '25px'
   }
 });
