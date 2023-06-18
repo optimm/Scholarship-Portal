@@ -1,5 +1,4 @@
 import { styled } from '@mui/system';
-import buttonImage from '@assets/images/login-google.png';
 
 export const LandingContainer = styled(`div`)({
   height: '100vh',
