@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 0 20px;
+
+  background: #e4dfda;
+  color: #4357ad;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-header__logo {
+  width: 50px;
+  fill: white;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__heading {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+  line-height: 60px;
+  text-align: center;
+}
+
+.site-header {
+  margin: 0;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  color: #333333;
+}
+
+.form__label {
+  display: block;
+  margin: 20px 0 5px 0;
+  font-weight: 300;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  background: #e4dfda;
+  color: #333333;
+  border: 2px solid #333333;
+  border-radius: 25px;
+  padding: 16px 10px;
+  letter-spacing: 1px;
+}
+
+.form__input:focus {
+  outline: 0;
+  border-color: #4357ad;
+}
+
+.form__group {
+  position: relative;
+}
+
+.form__submit {
+  display: block;
+
+  margin: 20px auto;
+  background: linear-gradient(120.37deg, rgba(212, 180, 131, 0.8) 0%, #c1666b 100%);
+  border-radius: 20px;
+  border: 0;
+  color: #e4dfda;
+
+  padding: 15px 40px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
+
+.form__forgot-password {
+  display: flex;
+  justify-content: center;
+}
+
+.form__forgot-password a {
+  margin-top: 20px;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+}
