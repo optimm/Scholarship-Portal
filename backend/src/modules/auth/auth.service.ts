@@ -5,7 +5,7 @@ import { Response } from 'express';
 
 @Injectable()
 export class AuthService {
-  async loginUser(user: UserDto | null, res: Response): Promise<MessageResDto> {
+  async loginUser(user: UserDto | null, res: Response): Promise<void> {
     if (!user) {
       throw new UnauthorizedException('User not found');
     }
@@ -16,7 +16,7 @@ export class AuthService {
       secure: true,
     };
     res.cookie('token', 'hello', cookieOptions);
-    return MessageResDto.default();
+    res.redirect('http://localhost:3000');
   }
   async registerUser() {
     console.log('hello');

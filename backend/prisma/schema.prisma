@@ -26,3 +26,16 @@ enum Role {
   USER
   ADMIN
 }
+
+model Scholarship {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  name        String   @unique
+  description String
+  startDate   DateTime
+  endDate     DateTime
+  link        String
+  isActive    Boolean
+
+  @@map(name: "scholarships")
+}

@@ -20,11 +20,12 @@ export const LandingContainer = styled(`div`)({
   }
 });
 
-export const LoginGoogleButton = styled(`button`)({
+export const LoginGoogleButton = styled(`a`)({
   border: 'none',
   outline: 'none',
   cursor: 'pointer',
   background: `#fff`,
+  textDecoration: 'none',
   display: 'flex',
   padding: '10px 20px',
   alignItems: 'center',
