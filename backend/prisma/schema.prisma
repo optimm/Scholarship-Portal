@@ -9,3 +9,14 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+
+model Scholarship {
+  name String @unique
+  description String
+  createdAt DateTime @default(now())
+  startDate DateTime
+  endDate DateTime
+  link String
+  isActive Boolean
+}
